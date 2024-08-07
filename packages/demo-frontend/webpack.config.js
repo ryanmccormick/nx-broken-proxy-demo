@@ -7,14 +7,17 @@ module.exports = {
     path: join(__dirname, '../../dist/packages/demo-frontend'),
   },
   devServer: {
-    proxy: [
-      {
-        context: ['/api'],
-        target: 'http://localhost:3000',
-        secure: false,
-        changeOrigin: true,
-      },
-    ],
+    // This has been the only way I have been able to get
+    // reverse proxy functionality.
+    //
+    // proxy: [
+    //   {
+    //     context: ['/api'],
+    //     target: 'http://localhost:3000',
+    //     secure: false,
+    //     changeOrigin: true,
+    //   },
+    // ],
     port: 4200,
   },
   plugins: [
