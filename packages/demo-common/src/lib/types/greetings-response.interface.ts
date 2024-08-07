@@ -1,3 +1,3 @@
 export interface GreetingsResponse {
-    message: string
+  message: string;
 }

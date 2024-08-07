@@ -1,1 +1,1 @@
-export * from './greetings-response.interface'
+export * from './greetings-response.interface';

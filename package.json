@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx run demo-frontend:serve",
     "start:service": "nx run demo-backend:serve",
-    "format": "prettier --write \"packages/**/*.tsx\""
+    "format": "prettier --write \"packages/**/*.ts\""
   },
   "private": true,
   "devDependencies": {
