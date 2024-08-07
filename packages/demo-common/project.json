@@ -1,0 +1,19 @@
+{
+  "name": "demo-common",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/demo-common/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/demo-common",
+        "main": "packages/demo-common/src/index.ts",
+        "tsConfig": "packages/demo-common/tsconfig.lib.json",
+        "assets": ["packages/demo-common/*.md"]
+      }
+    }
+  }
+}
